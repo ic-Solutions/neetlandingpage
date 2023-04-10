@@ -6,6 +6,15 @@
       font-family: Arial, Helvetica, sans-serif;
   }
 
+  .owl-carousel .owl-nav.disabled{
+    display: flex !important;
+    justify-content: center;
+  }
+  .owl-carousel .owl-nav.disabled *{
+    width: 100px;
+    margin: 0px 10px;
+  }
+
   section {
       padding: 50px 70px;
   }
@@ -54,6 +63,7 @@
   .hero-top div {
       font-size: x-large;
       font-weight: 700;
+      color: #21106A;
   }
 
   .hero-content {

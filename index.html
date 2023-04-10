@@ -100,20 +100,27 @@
             </div>
         </div>
         <h2 class="expert-heading my-6">What NEET Aspirants say about us...</h2>
+        <div class="slider_nav">
+            <button class="btn btn-outline-dark py-0 btn-next">Next</button>
+            <button class="btn btn-outline-dark py-0 btn-prev">Previous</button>
+        </div>
         <div class="owl-carousel youtube-link" id="owl-carousel">
             <div class="youtube-item">
                 <iframe width="100%" height="230" loading="lazy" class="thumbnail" frameborder="1" allow="accelerometer; autoplay;
-                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="https://www.youtube.com/embed/IPaQa_KdLrE">
+                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                    src="https://www.youtube.com/embed/IPaQa_KdLrE">
                 </iframe>
             </div>
             <div class="youtube-item">
                 <iframe width="100%" height="230" loading="lazy" class="thumbnail" frameborder="1" allow="accelerometer; autoplay;
-                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="https://www.youtube.com/embed/GA9RiFlXvBc">
+                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                    src="https://www.youtube.com/embed/GA9RiFlXvBc">
                 </iframe>
             </div>
             <div class="youtube-item">
                 <iframe width="100%" height="230" loading="lazy" class="thumbnail" frameborder="1" allow="accelerometer; autoplay;
-                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="https://www.youtube.com/embed/Dt0SOd2dBGk">
+                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                    src="https://www.youtube.com/embed/Dt0SOd2dBGk">
                 </iframe>
             </div>
         </div>
@@ -123,6 +130,10 @@
         <div class="testimonial-heading">
             <h2>Testimonials</h2>
             <h4 class="mx-2">What clients say about us...</h4>
+        </div>
+        <div class="slider_nav">
+            <button class="btn btn-outline-dark py-0 am-next">Next</button>
+            <button class="btn btn-outline-dark py-0 am-prev">Previous</button>
         </div>
         <div class="owl-carousel" id="testimonial-owl-carousel">
             <div>
@@ -231,9 +242,6 @@
     </div>
 
 
-    <!-- 
-    <script src="jquery.min.js"></script> -->
-    <script src="./assets/owlcarousel/owl.carousel.min.js"></script>
     <script>
         $(document).ready(function () {
             let one = $("#owl-carousel")
@@ -241,24 +249,31 @@
             one.owlCarousel({
                 loop: true,
                 center: true,
-                autoHeight:true,
+                autoHeight: true,
+                rewind: true,
+                nav: true,
+                navText: [$('.am-next'), $('.am-prev')],
                 responsive: {
                     0: {
-                        items: 1,
-                        nav: true
+                        nav: true,
+                        items: 1
                     },
                     800: {
                         items: 2,
-                        nav: false
+                        nav: true,
+                        center: false,
                     },
                     991: {
-                        items: 3,
-                        nav: true
+                        nav: true,
+                        items: 3
                     }
                 }
             });
             two.owlCarousel({
                 loop: true,
+                nav: true,
+                rewind: true,
+                navText: [$('.btn-next'), $('.btn-prev')],
                 responsive: {
                     0: {
                         items: 1,
@@ -266,13 +281,16 @@
                         center: true
                     },
                     950: {
-                        items: 2,
-                        nav: true
+                        nav: true,
+                        items: 2
                     }
                 }
             });
         });
     </script>
+    <!-- 
+    <script src="jquery.min.js"></script> -->
+    <script src="./assets/owlcarousel/owl.carousel.min.js"></script>
 </body>
 
 </html>
