@@ -17,7 +17,7 @@
     <!-- owl carousel -->
     <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.theme.default.min.css">
-
+    </script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <title>NEET Advisor</title>
@@ -45,14 +45,14 @@
     <section class="agenda">
         <div class="agenda-content">
             <h2>Webinar Agenda</h2>
-            <p><img src="./assets/images/click.webp" alt="click img"> How to score 600+ in NEETUG 2023?</p>
+            <p><img src="./assets/images/click.webp" alt="click img"> How to score 600+ in NEET UG 2023?</p>
             <p><img src="./assets/images/click.webp" alt="click img"> Mistakes committed by an medical aspirant scoring
-                good NEETScore. (500+/600+)</p>
+                good NEET Score. (500+/600+)</p>
             <p><img src="./assets/images/click.webp" alt="click img"> Tips and tricks to get a medical seat at low
-                NEETscore. (150+/250+/350+)</p>
+                NEET score. (150+/250+/350+)</p>
             <p><img src="./assets/images/click.webp" alt="click img"> How to get a dream medical college in your budget?
             </p>
-            <p><img src="./assets/images/click.webp" alt="click img"> 15% AIQ/AIIMS/ JIPMER/ AFMC/ ESI/Deemed/ State
+            <p><img src="./assets/images/click.webp" alt="click img"> 15% AIQ/AIIMS/ JIPMER/ AFMC/ ESI/ Deemed/ State
                 Quota Counselling.</p>
             <p><img src="./assets/images/click.webp" alt="click img"> Impact of increase in no of medical colleges/
                 fees/
@@ -60,7 +60,7 @@
             <p><img src="./assets/images/click.webp" alt="click img"> Rank vs Marks analysis/ Last three year trend/ Cut
                 offs/ Documentation.</p>
             <p><img src="./assets/images/click.webp" alt="click img"> How to crack Multiple state quota counselling.</p>
-            <p><img src="./assets/images/click.webp" alt="click img"> How NEETADVISOR can help you to get into a good
+            <p><img src="./assets/images/click.webp" alt="click img"> How NEET ADVISOR can help you to get into a good
                 medical college?</p>
         </div>
         <div class="agenda-img">
@@ -227,12 +227,13 @@
                     </p>
                 </div>
             </div>
-            <div class="col-lg-4 footer-3">
+            <div  class="col-lg-4 footer-3">
                 <div class="contact">
                     Call : 9911203280
                 </div>
-                <input type="text" placeholder="Your Email...">
-                <button>SUBSCRIBE</button>
+                <input id="email" name="email" type="text" placeholder="Your Email...">
+                <button onclick="subscript()">SUBSCRIBE</button>
+                <h5 class="responsealert my-2"> Thank you for subscrive us..</h5>
             </div>
         </div>
     </section>
@@ -241,56 +242,57 @@
         <h3>Privacy Policy I Terms & Refund Policy I Sitemap</h3>
     </div>
 
-
     <script>
         $(document).ready(function () {
-            let one = $("#owl-carousel")
-            let two = $("#testimonial-owl-carousel")
-            one.owlCarousel({
-                loop: true,
-                center: true,
-                autoHeight: true,
-                rewind: true,
+    let one = $("#owl-carousel")
+    let two = $("#testimonial-owl-carousel")
+    one.owlCarousel({
+        loop: true,
+        center: true,
+        autoHeight: true,
+        rewind: true,
+        nav: true,
+        navText: [$('.am-prev'), $('.am-next')],
+        responsive: {
+            0: {
                 nav: true,
-                navText: [$('.am-prev'), $('.am-next')],
-                responsive: {
-                    0: {
-                        nav: true,
-                        items: 1
-                    },
-                    800: {
-                        items: 2,
-                        nav: true,
-                        center: false,
-                    },
-                    991: {
-                        nav: true,
-                        items: 3
-                    }
-                }
-            });
-            two.owlCarousel({
-                loop: true,
+                items: 1
+            },
+            800: {
+                items: 2,
                 nav: true,
-                rewind: true,
-                navText: [$('.btn-prev'), $('.btn-next')],
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: true,
-                        center: true
-                    },
-                    950: {
-                        nav: true,
-                        items: 2
-                    }
-                }
-            });
-        });
+                center: false,
+            },
+            991: {
+                nav: true,
+                items: 3
+            }
+        }
+    });
+    two.owlCarousel({
+        loop: true,
+        nav: true,
+        rewind: true,
+        navText: [$('.btn-prev'), $('.btn-next')],
+        responsive: {
+            0: {
+                items: 1,
+                nav: true,
+                center: true
+            },
+            950: {
+                nav: true,
+                items: 2
+            }
+        }
+    });
+});
     </script>
+
     <!-- 
     <script src="jquery.min.js"></script> -->
     <script src="./assets/owlcarousel/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -17,6 +17,15 @@
     margin: 0px;
   }
 
+  .responsealert{
+    display: none;
+  }
+  .responsealert.show{
+    display: inline;
+    font-weight: bold;
+    color: #F3BB1B;
+  }
+
   .owl-carousel .owl-nav .btn-prev,.owl-carousel .owl-nav .btn-next,.owl-carousel .owl-nav .am-prev,.owl-carousel .owl-nav .am-next{
     width: 100%;
     border: solid 1px black;
