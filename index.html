@@ -82,7 +82,8 @@
             </div>
             <div class="col-lg-4 col-md-6 expert-card">
                 <div class="card-head">
-                    <img width="305px" height="351px" class="card-img" src="./assets/images/Dr. Harshit Pathak.webp" alt="">
+                    <img width="305px" height="351px" class="card-img" src="./assets/images/Dr. Harshit Pathak.webp"
+                        alt="">
                 </div>
                 <div class="card-content">
                     <h4>Dr. HARSHIT PATHAK</h4>
@@ -198,10 +199,18 @@
                 <div class="social-link">
                     <h5>Follow Us</h5>
                     <div class="link-items">
-                        <img height="30px" width="30px" src="./assets/images/FACEBOOK.webp" alt="">
-                        <img height="30px" width="30px" src="./assets/images/INSTAGRAM.webp" alt="">
-                        <img height="30px" width="30px" src="./assets/images/TWITTER.webp" alt="">
-                        <img height="30px" width="45px" src="./assets/images/YOUTUBE.webp" alt="">
+                        <a href="https://www.facebook.com/NEETADVISOR" target="_blank">
+                            <img height="30px" width="30px" src="./assets/images/FACEBOOK.webp" alt="facebook page">
+                        </a>
+                        <a href="https://www.instagram.com/neetadvisor_com/" target="_blank">
+                            <img height="30px" width="30px" src="./assets/images/INSTAGRAM.webp" alt="instagra page">
+                        </a>
+                        <a href="https://www.linkedin.com/company/neetadvisordotcom/?originalSubdomain=in" target="_blank">
+                            <i class="fa-brands fa-linkedin fa-2xl"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCiJqbK5EeRtijkCgqwP5e4A" target="_blank">
+                            <img height="30px" width="45px" src="./assets/images/YOUTUBE.webp" alt="youtube page">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -227,7 +236,7 @@
                     </p>
                 </div>
             </div>
-            <div  class="col-lg-4 footer-3">
+            <div class="col-lg-4 footer-3">
                 <div class="contact">
                     Call : 9911203280
                 </div>
@@ -244,49 +253,49 @@
 
     <script>
         $(document).ready(function () {
-    let one = $("#owl-carousel")
-    let two = $("#testimonial-owl-carousel")
-    one.owlCarousel({
-        loop: true,
-        center: true,
-        autoHeight: true,
-        rewind: true,
-        nav: true,
-        navText: [$('.am-prev'), $('.am-next')],
-        responsive: {
-            0: {
+            let one = $("#owl-carousel")
+            let two = $("#testimonial-owl-carousel")
+            one.owlCarousel({
+                loop: true,
+                center: true,
+                autoHeight: true,
+                rewind: true,
                 nav: true,
-                items: 1
-            },
-            800: {
-                items: 2,
+                navText: [$('.am-prev'), $('.am-next')],
+                responsive: {
+                    0: {
+                        nav: true,
+                        items: 1
+                    },
+                    800: {
+                        items: 2,
+                        nav: true,
+                        center: false,
+                    },
+                    991: {
+                        nav: true,
+                        items: 3
+                    }
+                }
+            });
+            two.owlCarousel({
+                loop: true,
                 nav: true,
-                center: false,
-            },
-            991: {
-                nav: true,
-                items: 3
-            }
-        }
-    });
-    two.owlCarousel({
-        loop: true,
-        nav: true,
-        rewind: true,
-        navText: [$('.btn-prev'), $('.btn-next')],
-        responsive: {
-            0: {
-                items: 1,
-                nav: true,
-                center: true
-            },
-            950: {
-                nav: true,
-                items: 2
-            }
-        }
-    });
-});
+                rewind: true,
+                navText: [$('.btn-prev'), $('.btn-next')],
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true,
+                        center: true
+                    },
+                    950: {
+                        nav: true,
+                        items: 2
+                    }
+                }
+            });
+        });
     </script>
 
     <!-- 

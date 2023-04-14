@@ -324,6 +324,9 @@
       font-weight: 700;
       text-align: center;
   }
+  .social-link  a{
+    text-decoration: none;
+  }
 
   .footer-2 .location>* {
       width: 300px;
