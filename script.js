@@ -18,7 +18,7 @@ function subscript(){
         if(validMail !== true){
             alert("Email is not validate")
         }else{
-            fetch("https://formsubmit.co/ajax/officeattendance27@gmail.com", {
+            fetch("https://formsubmit.co/ajax/info@neetadvisor.com", {
                 method: "POST",
                 headers: { 
                     'Content-Type': 'application/json',
