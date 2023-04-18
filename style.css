@@ -341,6 +341,7 @@
   .footer-3 .contact {
       font-size: 25px;
       font-weight: 800;
+      margin-bottom: 20px;
   }
 
   .footer-3 input {
@@ -352,13 +353,16 @@
       border-radius: 10px;
   }
 
-  .footer-3 button {
+  .footer-3 button, .footer-3 a {
       border: solid 1px black;
       background-color: #F3BB1B;
       padding: 5px;
       font-weight: 800;
       font-size: small;
-      max-width: 105px;
+      text-align: center;
+      text-decoration: none;
+      color: black;
+      max-width: 155px;
       border-radius: 10px;
   }
 
