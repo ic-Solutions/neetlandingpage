@@ -12,9 +12,11 @@
   }
   
   .owl-carousel .owl-nav.disabled > *, .owl-carousel .owl-nav > *{
-    width: 100%;
     margin: 0px 10px;
     margin: 0px;
+    max-width: 150px;
+    width: 100%;
+    margin: 0px 20px;
   }
 
   .responsealert{
@@ -27,6 +29,7 @@
   }
 
   .owl-carousel .owl-nav .btn-prev,.owl-carousel .owl-nav .btn-next,.owl-carousel .owl-nav .am-prev,.owl-carousel .owl-nav .am-next{
+    max-width: 150px;
     width: 100%;
     border: solid 1px black;
     color: black;
@@ -36,8 +39,8 @@
     transition: all ease-in-out 0.1s;
   }
   .owl-carousel .owl-nav .btn-prev:hover,.owl-carousel .owl-nav .btn-next:hover,.owl-carousel .owl-nav .am-prev:hover,.owl-carousel .owl-nav .am-next:hover{
-    box-shadow: 2px 2px 5px gainsboro;
-   transform: scale(0.99);
+    /* box-shadow: 2px 2px 5px gainsboro; */
+   background-color: gainsboro;
   }
 
   section {
@@ -85,8 +88,9 @@
       height: 75px
   }
 
-  .hero-top div {
+  .hero-top a {
       font-size: x-large;
+      text-decoration: none;
       font-weight: 700;
       color: #21106A;
   }
