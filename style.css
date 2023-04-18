@@ -32,15 +32,18 @@
     max-width: 150px;
     width: 100%;
     border: solid 1px black;
+    border-radius: 10px;
     color: black;
     background-color: white;
     padding: 5px;
     font-size: large;
-    transition: all ease-in-out 0.1s;
+    transition: all ease-in-out 0.5s;
   }
   .owl-carousel .owl-nav .btn-prev:hover,.owl-carousel .owl-nav .btn-next:hover,.owl-carousel .owl-nav .am-prev:hover,.owl-carousel .owl-nav .am-next:hover{
     /* box-shadow: 2px 2px 5px gainsboro; */
-   background-color: gainsboro;
+   background-color:#21106A;
+   color: white;
+   border: none;
   }
 
   section {
