@@ -58,6 +58,8 @@
       background-image: url(assets/images/herobg.webp);
       height: 100%;
       position: relative;
+      background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .hero .hero-img {
@@ -114,11 +116,6 @@
       align-items: center;
   }
 
-  .hero-content h1 img {
-      height: 30px;
-      width: 30px;
-  }
-
   .hero-content h3 {
       font-weight: 700;
       font-size: 4rem;
@@ -143,7 +140,7 @@
       color: #21106A;
   }
 
-  .hero-content button {
+  .hero-content a {
       font-size: x-large;
       background-color: #21106A;
       color: white;
@@ -151,13 +148,13 @@
       border-radius: 15px;
   }
 
-  .hero-content button:hover {
+  .hero-content a:hover {
       background-color: #170b4c;
       color: white;
   }
 
-  .hero-content button {
-      margin-top: 50px;
+  .hero-content a {
+      margin-top: 30px;
       max-width: 400px;
   }
 
