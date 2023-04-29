@@ -35,3 +35,10 @@ function subscript(){
         alert("Please enter email for subscribe")
     }
 }
+
+let callMe = document.querySelector(".call-me")
+let whatsappme = document.querySelector(".whatsapp-me")
+setTimeout(() => {
+  callMe.classList.add("active")
+  whatsappme.classList.add("active")
+}, 3000);
