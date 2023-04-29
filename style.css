@@ -124,6 +124,8 @@
       display: flex;
       font-size: 3rem;
       align-items: center;
+      justify-content: end;
+      flex-wrap: wrap;
   }
 
   .hero-content h3 {
@@ -248,8 +250,12 @@
 
   .card-content {
       background-color: #e0e0e0;
-      padding: 10px;
+      padding: 35px;
       border-radius: 20px;
+  }
+
+  .expected-ceo{
+    margin: 40px 50px;
   }
 
   .card-content h4,
@@ -509,6 +515,20 @@
   @media only screen and (max-width: 430px) {
       section {
           padding: 20px;
+      }
+      .hero-content h6{
+        font-size: small !important;
+      }
+
+      .card-content{
+        padding: 20px;
+      }
+      .expected-ceo{
+        margin: 40px 10px;
+      }
+      .hero-content a{
+        padding: 10px 20px;
+        font-size: medium;
       }
 
       .agenda-img {
