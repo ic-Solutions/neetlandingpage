@@ -594,3 +594,11 @@
     margin-top: 10px;
 }
 }
+
+.contact-popup .color-brand {
+    color: #270a68;
+}
+
+.btn-close{
+  cursor: pointer;
+}
