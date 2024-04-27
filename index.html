@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="shortcut icon" href="faviconn.png" type="image/x-icon">
+
+    <title>Biggest Seminar on NEET</title>
+</head>
+<style>
+    *{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body{
+        background-color: lightgray;
+    }
+    .main{
+        margin-left: 25%;
+        margin-top: 5%;
+        height: 100%;
+        width: 50%;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow:  2px 2px 2px 2px;
+    }
+    .heading{
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 4%;
+        display: inline-block;
+        text-align: center;
+    }
+    .modal-body {
+        width:100%; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%; 
+        column-gap: 2%;
+    }
+    .custom-link {
+    margin-left: 0%;
+    width: max-content;
+    border-radius: 20px 20px 20px 20px;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 0%;
+    background-color: #f1b301; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 900;
+
+}
+.custom-link.clicked {
+    width: 80%; 
+}
+.custom-link.city-btn.city.clicked {
+  color: black;
+    background-color: lightgrey;
+    border-color: white;
+}
+
+.city{
+    width:50%; 
+    padding: 1% 10% 1% 10%;
+  }
+  .slot1{
+    margin-left: 2.5%;
+    width: max-content;
+    border-radius: 20px 20px 20px 20px;
+    display: block;
+    font-size: 14px;
+    padding: 1%;
+    margin-bottom: 2%;
+    background-color: #f1b301; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 700;
+    width:100%; 
+   
+  }
+  .slot1:hover{
+    background-color: darkgrey;
+  }
+
+  .btn-circle{
+    margin-top: 3%;
+    display: inline-block;
+    text-align: center;
+    padding: 0%;
+    width: 50px;
+    height: 50px;
+    
+  }
+  .size1{
+    font-size: 200%;
+    font-weight: 900;
+    color: rgb(3, 3, 47);
+    transition: font-size 0.3s ease;
+  }
+  .size1:hover{
+    color: #f1b301;
+    font-size: 250%;
+  }
+  .col-9{
+    padding-right: 2%;
+    padding-left: 0%;
+  }
+  @media (max-width: 576px) {
+        .main {
+            width: 90%;
+            margin: auto;
+            
+        }
+        body{
+            margin-top: 10%;
+        }
+        .city{
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        .heading{
+            font-size: 12px;
+        }
+        .size1{
+            font-size: 100%;
+        }
+
+    }
+
+        /* Media Query for Tablets */
+    @media (min-width: 577px) and (max-width: 768px) {
+        .main {
+            width: 80%;
+            margin: auto;
+        }
+        .heading{
+            font-size: 14px;
+        }
+        .city{
+            font-size: 12px;
+        }
+        .btn-circle{
+            width: 50px;
+            height: 50px;
+        }
+        .size1{
+            font-size: 150%;
+        }
+
+    }
+</style>
+<body>
+    <div class="main">
+    <div class="container">
+        <div class="row" id="home">
+          <div class="col-2 btn-circle" id="backBtn" style="visibility: hidden;">
+            <h3><i class="fa fa-angle-left size1" aria-hidden="true"></i></h3>
+          </div>
+          <div class="col-8 heading" id="head" style="display: block;">
+            CHOOSE SEMINAR LOCATION
+          </div>
+          <div class="col-2 btn-circle" id="forwardBtn" style="display: none;">
+            <h3 ><i class="fa fa-arrow-right" aria-hidden="true"></i></h3>
+          </div>
+        </div>
+        <div class="modal-body">
+            <button class="custom-link city-btn city" id="mumbaiBtn">Mumbai Seminar<br> 12th May (Sunday)</button>
+            <button class="custom-link city-btn city" onclick="DLE()"  id="delhiBtn">Delhi Seminar <br> 11th May (Saturday)</button>
+        </div>
+
+        
+        <div class="modal-body" id="slotContainerMumbai" style="display:none;">
+            <div class="container">
+                <div class="row">
+                  <div class="col">
+                
+                  </div>
+                  <div class="col-9">
+                    <button class="slot1" onclick="MHM()"><a href="https://konfhub.com/checkout/neet-seminar-mor?ticketId=15978" style="color:#000;"> Session 1 :<br> (11:30 AM to 1:30 PM)</a></button>
+                    <button class="slot1" onclick="MHE()"><a href="https://konfhub.com/checkout/neet-seminar-eve?ticketId=15981" style="color:#000;"> Session 2 :<br> (03:30 PM to 5:30 PM)</a></button>
+
+                  </div>
+                  <div class="col">
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body" id="slotContainerDelhi" style="display:none;">
+                <!-- <div class="container">
+                    <div class="row">
+                      <div class="col">
+                    
+                      </div>
+                      <div class="col-9 ">
+                        <button class="slot1" onclick="DLE()"><a href="https://konfhub.com/checkout/neet-seminar?ticketId=16105" style="color:#000;"> 11th May 2024 (Saturday)<br> (3:30 PM to 5:30 PM)</a></button>
+    
+                      </div>
+                      <div class="col">
+                    
+                      </div>
+                    </div>
+                  </div> -->
+             
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    document.getElementById("mumbaiBtn").addEventListener("click", function() {
+    document.getElementById("slotContainerMumbai").style.display = "block";
+    document.getElementById("slotContainerDelhi").style.display = "none";
+    document.getElementById("delhiBtn").style.display = "none";
+    document.getElementById("delhiBtn").disabled = true;
+    document.getElementById("backBtn").style.visibility = "inherit";
+    this.classList.add("clicked");
+});
+
+document.getElementById("delhiBtn").addEventListener("click", function() {
+    let checkoutUrl = "https://konfhub.com/checkout/neet-seminar?ticketId=16105";
+    window.location.href = checkoutUrl;
+    // document.getElementById("slotContainerDelhi").style.display = "block";
+    // document.getElementById("slotContainerMumbai").style.display = "none";
+    // document.getElementById("mumbaiBtn").style.display = "none";
+    // document.getElementById("delhiBtn").disabled = true;
+    // document.getElementById("backBtn").style.visibility = "inherit";
+    // this.classList.add("clicked");
+});
+
+document.getElementById('backBtn').addEventListener('click', function () {
+    window.location.reload();
+   
+});
+function DLE(){
+    let checkoutUrl = "https://konfhub.com/checkout/neet-seminar?ticketId=16105";
+    window.location.href = checkoutUrl;
+}
+function MHE(){
+    let checkoutUrl = "https://konfhub.com/checkout/neet-seminar-eve?ticketId=15981";
+  window.location.href = checkoutUrl;
+}
+function MHM() {
+  let checkoutUrl = "https://konfhub.com/checkout/neet-seminar-mor?ticketId=15978";
+  window.location.href = checkoutUrl;
+}
+
+</script>
+</html>
